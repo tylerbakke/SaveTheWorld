@@ -10,6 +10,7 @@
 		F7DEE5B31D2D7F31008ACCA7 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEE5B21D2D7F31008ACCA7 /* GradientView.swift */; };
 		F7DEE5B61D2D9CC2008ACCA7 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEE5B51D2D9CC2008ACCA7 /* PostTableViewCell.swift */; };
 		F7DEE5B91D2D9D52008ACCA7 /* WarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEE5B81D2D9D52008ACCA7 /* WarViewController.swift */; };
+		F7DEE5BB1D2DC15A008ACCA7 /* RacismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEE5BA1D2DC15A008ACCA7 /* RacismViewController.swift */; };
 		F7DFD6C71D2C686A005DD2F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFD6C61D2C686A005DD2F6 /* AppDelegate.swift */; };
 		F7DFD6C91D2C686A005DD2F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFD6C81D2C686A005DD2F6 /* HomeViewController.swift */; };
 		F7DFD6CC1D2C686A005DD2F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DFD6CA1D2C686A005DD2F6 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		F7DEE5B21D2D7F31008ACCA7 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = ../GradientView.swift; sourceTree = "<group>"; };
 		F7DEE5B51D2D9CC2008ACCA7 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		F7DEE5B81D2D9D52008ACCA7 /* WarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarViewController.swift; sourceTree = "<group>"; };
+		F7DEE5BA1D2DC15A008ACCA7 /* RacismViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RacismViewController.swift; sourceTree = "<group>"; };
 		F7DFD6C31D2C686A005DD2F6 /* #SaveTheWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "#SaveTheWorld.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFD6C61D2C686A005DD2F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7DFD6C81D2C686A005DD2F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				F7DFD6C81D2C686A005DD2F6 /* HomeViewController.swift */,
 				F7DEE5B81D2D9D52008ACCA7 /* WarViewController.swift */,
+				F7DEE5BA1D2DC15A008ACCA7 /* RacismViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				F7DFD6C91D2C686A005DD2F6 /* HomeViewController.swift in Sources */,
 				F7DFD6C71D2C686A005DD2F6 /* AppDelegate.swift in Sources */,
 				F7DEE5B31D2D7F31008ACCA7 /* GradientView.swift in Sources */,
+				F7DEE5BB1D2DC15A008ACCA7 /* RacismViewController.swift in Sources */,
 				F7DEE5B91D2D9D52008ACCA7 /* WarViewController.swift in Sources */,
 				F7DEE5B61D2D9CC2008ACCA7 /* PostTableViewCell.swift in Sources */,
 			);
