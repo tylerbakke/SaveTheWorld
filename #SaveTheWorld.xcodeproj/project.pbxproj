@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7DEE5B31D2D7F31008ACCA7 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEE5B21D2D7F31008ACCA7 /* GradientView.swift */; };
+		F7DEE5B61D2D9CC2008ACCA7 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEE5B51D2D9CC2008ACCA7 /* PostTableViewCell.swift */; };
+		F7DEE5B91D2D9D52008ACCA7 /* WarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEE5B81D2D9D52008ACCA7 /* WarViewController.swift */; };
 		F7DFD6C71D2C686A005DD2F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFD6C61D2C686A005DD2F6 /* AppDelegate.swift */; };
-		F7DFD6C91D2C686A005DD2F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFD6C81D2C686A005DD2F6 /* ViewController.swift */; };
+		F7DFD6C91D2C686A005DD2F6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DFD6C81D2C686A005DD2F6 /* HomeViewController.swift */; };
 		F7DFD6CC1D2C686A005DD2F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DFD6CA1D2C686A005DD2F6 /* Main.storyboard */; };
 		F7DFD6CE1D2C686A005DD2F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7DFD6CD1D2C686A005DD2F6 /* Assets.xcassets */; };
 		F7DFD6D11D2C686A005DD2F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7DFD6CF1D2C686A005DD2F6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7DEE5B21D2D7F31008ACCA7 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = ../GradientView.swift; sourceTree = "<group>"; };
+		F7DEE5B51D2D9CC2008ACCA7 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		F7DEE5B81D2D9D52008ACCA7 /* WarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarViewController.swift; sourceTree = "<group>"; };
 		F7DFD6C31D2C686A005DD2F6 /* #SaveTheWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "#SaveTheWorld.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7DFD6C61D2C686A005DD2F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F7DFD6C81D2C686A005DD2F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7DFD6C81D2C686A005DD2F6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		F7DFD6CB1D2C686A005DD2F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7DFD6CD1D2C686A005DD2F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7DFD6D01D2C686A005DD2F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7DEE5B41D2D8074008ACCA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7DEE5B21D2D7F31008ACCA7 /* GradientView.swift */,
+				F7DEE5B51D2D9CC2008ACCA7 /* PostTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7DEE5B71D2D9D20008ACCA7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F7DFD6C81D2C686A005DD2F6 /* HomeViewController.swift */,
+				F7DEE5B81D2D9D52008ACCA7 /* WarViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		F7DFD6BA1D2C686A005DD2F6 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +78,9 @@
 		F7DFD6C51D2C686A005DD2F6 /* #SaveTheWorld */ = {
 			isa = PBXGroup;
 			children = (
+				F7DEE5B71D2D9D20008ACCA7 /* ViewControllers */,
+				F7DEE5B41D2D8074008ACCA7 /* Views */,
 				F7DFD6C61D2C686A005DD2F6 /* AppDelegate.swift */,
-				F7DFD6C81D2C686A005DD2F6 /* ViewController.swift */,
 				F7DFD6CA1D2C686A005DD2F6 /* Main.storyboard */,
 				F7DFD6CD1D2C686A005DD2F6 /* Assets.xcassets */,
 				F7DFD6CF1D2C686A005DD2F6 /* LaunchScreen.storyboard */,
@@ -135,8 +160,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7DFD6C91D2C686A005DD2F6 /* ViewController.swift in Sources */,
+				F7DFD6C91D2C686A005DD2F6 /* HomeViewController.swift in Sources */,
 				F7DFD6C71D2C686A005DD2F6 /* AppDelegate.swift in Sources */,
+				F7DEE5B31D2D7F31008ACCA7 /* GradientView.swift in Sources */,
+				F7DEE5B91D2D9D52008ACCA7 /* WarViewController.swift in Sources */,
+				F7DEE5B61D2D9CC2008ACCA7 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +314,7 @@
 				F7DFD6D71D2C686A005DD2F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
