@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F76210CA1D2EF91200F4C205 /* SexismViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76210C91D2EF91200F4C205 /* SexismViewController.swift */; };
+		F76210CC1D2F10E600F4C205 /* HungerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76210CB1D2F10E600F4C205 /* HungerViewController.swift */; };
+		F76210CE1D2F10F600F4C205 /* ClosetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76210CD1D2F10F600F4C205 /* ClosetViewController.swift */; };
+		F76210D01D2F110000F4C205 /* DrugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76210CF1D2F110000F4C205 /* DrugViewController.swift */; };
 		F7DEE5B31D2D7F31008ACCA7 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEE5B21D2D7F31008ACCA7 /* GradientView.swift */; };
 		F7DEE5B61D2D9CC2008ACCA7 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEE5B51D2D9CC2008ACCA7 /* PostTableViewCell.swift */; };
 		F7DEE5B91D2D9D52008ACCA7 /* WarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7DEE5B81D2D9D52008ACCA7 /* WarViewController.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F76210C91D2EF91200F4C205 /* SexismViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SexismViewController.swift; sourceTree = "<group>"; };
+		F76210CB1D2F10E600F4C205 /* HungerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HungerViewController.swift; sourceTree = "<group>"; };
+		F76210CD1D2F10F600F4C205 /* ClosetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClosetViewController.swift; sourceTree = "<group>"; };
+		F76210CF1D2F110000F4C205 /* DrugViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrugViewController.swift; sourceTree = "<group>"; };
 		F7DEE5B21D2D7F31008ACCA7 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradientView.swift; path = ../GradientView.swift; sourceTree = "<group>"; };
 		F7DEE5B51D2D9CC2008ACCA7 /* PostTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		F7DEE5B81D2D9D52008ACCA7 /* WarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WarViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +66,10 @@
 				F7DFD6C81D2C686A005DD2F6 /* HomeViewController.swift */,
 				F7DEE5B81D2D9D52008ACCA7 /* WarViewController.swift */,
 				F7DEE5BA1D2DC15A008ACCA7 /* RacismViewController.swift */,
+				F76210C91D2EF91200F4C205 /* SexismViewController.swift */,
+				F76210CB1D2F10E600F4C205 /* HungerViewController.swift */,
+				F76210CD1D2F10F600F4C205 /* ClosetViewController.swift */,
+				F76210CF1D2F110000F4C205 /* DrugViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -163,10 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F76210D01D2F110000F4C205 /* DrugViewController.swift in Sources */,
+				F76210CA1D2EF91200F4C205 /* SexismViewController.swift in Sources */,
 				F7DFD6C91D2C686A005DD2F6 /* HomeViewController.swift in Sources */,
 				F7DFD6C71D2C686A005DD2F6 /* AppDelegate.swift in Sources */,
 				F7DEE5B31D2D7F31008ACCA7 /* GradientView.swift in Sources */,
 				F7DEE5BB1D2DC15A008ACCA7 /* RacismViewController.swift in Sources */,
+				F76210CE1D2F10F600F4C205 /* ClosetViewController.swift in Sources */,
+				F76210CC1D2F10E600F4C205 /* HungerViewController.swift in Sources */,
 				F7DEE5B91D2D9D52008ACCA7 /* WarViewController.swift in Sources */,
 				F7DEE5B61D2D9CC2008ACCA7 /* PostTableViewCell.swift in Sources */,
 			);

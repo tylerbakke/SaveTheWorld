@@ -80,6 +80,9 @@
                                 <state key="normal" title="Hunger">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="NXf-Xx-owX" kind="show" identifier="Hunger" id="bgl-8F-U3h"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVj-zw-74V">
                                 <rect key="frame" x="430" y="469" width="100" height="100"/>
@@ -91,6 +94,9 @@
                                 <state key="normal" title="Drug Abuse">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="eSM-s6-YYG" kind="show" identifier="Drug" id="vhF-Hr-mk5"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91P-hp-LgW" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="525" width="600" height="75"/>
@@ -114,6 +120,9 @@
                                 <state key="normal" title="LGBTQIA+">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="U1I-WP-wvL" kind="show" identifier="LGBTQIA+" id="Lad-1l-3LL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -156,7 +165,7 @@
         <!--Sexism View Controller-->
         <scene sceneID="GPU-PW-SwN">
             <objects>
-                <viewController title="Sexism View Controller" id="YIU-nh-OAU" sceneMemberID="viewController">
+                <viewController title="Sexism View Controller" id="YIU-nh-OAU" customClass="SexismViewController" customModule="_SaveTheWorld" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tQU-kP-v89"/>
                         <viewControllerLayoutGuide type="bottom" id="KIF-tc-9wL"/>
@@ -165,36 +174,180 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1R-MS-Hkl">
-                                <rect key="frame" x="292" y="233" width="119" height="29"/>
-                                <state key="normal" title="Microaggressors"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this sexist?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RM-qx-zLc">
+                                <rect key="frame" x="212" y="104" width="177" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k6-91-xdN">
+                                <rect key="frame" x="125" y="170" width="350" height="150"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="rM9-pn-m4e"/>
+                                    <constraint firstAttribute="width" constant="350" id="xa3-IT-Xmd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                         <integer key="value" value="1"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VW-ld-ao1" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Uti-GQ-uYu"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-Ze-hYV">
+                                <rect key="frame" x="125" y="350" width="350" height="50"/>
+                                <color key="backgroundColor" red="0.28297050494233755" green="0.65925638089005234" blue="0.043649139002007994" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="d4N-VZ-og9"/>
+                                    <constraint firstAttribute="width" constant="350" id="mpy-D0-755"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Yes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="yesButtonPress:" destination="YIU-nh-OAU" eventType="touchUpInside" id="Rtu-vw-Nae"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNN-vS-2fI">
-                                <rect key="frame" x="65" y="310" width="149" height="30"/>
-                                <state key="normal" title="Gendered Disparities"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pyj-hy-YDf">
-                                <rect key="frame" x="197" y="408" width="91" height="30"/>
-                                <state key="normal" title="Professions"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGc-kO-Mq6">
+                                <rect key="frame" x="125" y="430" width="350" height="50"/>
+                                <color key="backgroundColor" red="0.84039594240837689" green="0.045058663516701188" blue="0.017715991388187108" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="fsO-lS-OPF"/>
+                                    <constraint firstAttribute="height" constant="50" id="s4j-VJ-KEt"/>
+                                </constraints>
+                                <state key="normal" title="No">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="noButtonPress:" destination="YIU-nh-OAU" eventType="touchUpInside" id="ffV-jP-41Z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pc1-Ze-hYV" firstAttribute="centerX" secondItem="zhi-41-L2e" secondAttribute="centerX" id="Daa-di-i9s"/>
+                            <constraint firstItem="0k6-91-xdN" firstAttribute="centerX" secondItem="zhi-41-L2e" secondAttribute="centerX" id="LnF-O7-gey"/>
+                            <constraint firstItem="0k6-91-xdN" firstAttribute="top" secondItem="9RM-qx-zLc" secondAttribute="bottom" constant="30" id="OVh-iC-55S"/>
+                            <constraint firstAttribute="trailing" secondItem="1VW-ld-ao1" secondAttribute="trailing" id="Oeo-Nl-TFS"/>
+                            <constraint firstItem="KGc-kO-Mq6" firstAttribute="top" secondItem="pc1-Ze-hYV" secondAttribute="bottom" constant="30" id="PON-65-Usr"/>
+                            <constraint firstItem="KIF-tc-9wL" firstAttribute="top" secondItem="1VW-ld-ao1" secondAttribute="bottom" id="UJR-xn-fEr"/>
+                            <constraint firstItem="9RM-qx-zLc" firstAttribute="top" secondItem="tQU-kP-v89" secondAttribute="bottom" constant="40" id="W5S-tw-f1m"/>
+                            <constraint firstItem="KGc-kO-Mq6" firstAttribute="top" secondItem="0k6-91-xdN" secondAttribute="bottom" constant="20" id="Z04-cA-CwG"/>
+                            <constraint firstItem="pc1-Ze-hYV" firstAttribute="top" secondItem="0k6-91-xdN" secondAttribute="bottom" constant="30" id="ZUn-1a-dj6"/>
+                            <constraint firstItem="KGc-kO-Mq6" firstAttribute="centerX" secondItem="zhi-41-L2e" secondAttribute="centerX" constant="50" id="aTi-oR-52x"/>
+                            <constraint firstItem="pc1-Ze-hYV" firstAttribute="top" secondItem="0k6-91-xdN" secondAttribute="bottom" constant="20" id="cYn-yj-BQa"/>
+                            <constraint firstItem="pc1-Ze-hYV" firstAttribute="centerX" secondItem="zhi-41-L2e" secondAttribute="centerX" constant="-50" id="huD-ux-JnV"/>
+                            <constraint firstItem="1VW-ld-ao1" firstAttribute="leading" secondItem="zhi-41-L2e" secondAttribute="leading" id="ilh-8a-6Zo"/>
+                            <constraint firstItem="9RM-qx-zLc" firstAttribute="centerX" secondItem="zhi-41-L2e" secondAttribute="centerX" id="w8f-xQ-gHB"/>
+                            <constraint firstItem="KGc-kO-Mq6" firstAttribute="centerX" secondItem="zhi-41-L2e" secondAttribute="centerX" id="ycG-ne-vcC"/>
+                        </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
                                 <integer key="value" value="1"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cYn-yj-BQa"/>
+                                <exclude reference="huD-ux-JnV"/>
+                                <exclude reference="Z04-cA-CwG"/>
+                                <exclude reference="aTi-oR-52x"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="#SaveTheWorld" id="x6J-Zm-vlc"/>
+                    <connections>
+                        <outlet property="sexistTextVew" destination="0k6-91-xdN" id="nfL-rA-yYW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3V6-40-LX8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1971" y="1275"/>
+        </scene>
+        <!--Hunger-->
+        <scene sceneID="CR7-dE-jN9">
+            <objects>
+                <viewController title="Hunger" id="NXf-Xx-owX" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lZc-UM-vFF"/>
+                        <viewControllerLayoutGuide type="bottom" id="O22-uv-uAm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QY8-3M-eRi">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WT-js-6Jn" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="XiP-0E-Fhf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3WT-js-6Jn" firstAttribute="leading" secondItem="QY8-3M-eRi" secondAttribute="leading" id="2II-86-gBR"/>
+                            <constraint firstItem="O22-uv-uAm" firstAttribute="top" secondItem="3WT-js-6Jn" secondAttribute="bottom" id="caj-75-Jtk"/>
+                            <constraint firstAttribute="trailing" secondItem="3WT-js-6Jn" secondAttribute="trailing" id="txt-MC-INw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="#SaveTheWorld" id="fCc-dh-PxN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kf1-zH-0Nt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="2042"/>
+        </scene>
+        <!--Drug Abuse-->
+        <scene sceneID="iyQ-uR-Lqp">
+            <objects>
+                <viewController title="Drug Abuse" id="eSM-s6-YYG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4x8-jZ-LvT"/>
+                        <viewControllerLayoutGuide type="bottom" id="hB2-eG-mDJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Io-wp-i3T">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhK-YF-yBi" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Ld0-S8-Ju6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dhK-YF-yBi" firstAttribute="leading" secondItem="2Io-wp-i3T" secondAttribute="leading" id="3pt-wv-xnE"/>
+                            <constraint firstAttribute="trailing" secondItem="dhK-YF-yBi" secondAttribute="trailing" id="gWu-DP-5k7"/>
+                            <constraint firstItem="hB2-eG-mDJ" firstAttribute="top" secondItem="dhK-YF-yBi" secondAttribute="bottom" id="se3-XE-VaN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="#SaveTheWorld" id="fHb-v9-3pB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjx-yT-Bnf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1961" y="2772"/>
         </scene>
         <!--Racism View Controller-->
         <scene sceneID="vKh-0k-xyQ">
@@ -221,7 +374,10 @@
                                     <constraint firstAttribute="height" constant="200" id="31A-Sc-yzd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Q9i-2I-N8T" id="4Ry-oF-xLd"/>
+                                </connections>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type something you think is racially sensitive." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaw-BE-E8v">
                                 <rect key="frame" x="126" y="150" width="348" height="21"/>
@@ -229,8 +385,8 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Result :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQG-wy-rQF">
-                                <rect key="frame" x="95" y="504" width="65" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQG-wy-rQF">
+                                <rect key="frame" x="95" y="491" width="57" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -245,17 +401,11 @@
                                     <action selector="checkOnPress:" destination="Q9i-2I-N8T" eventType="touchUpInside" id="xvW-St-vGa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="led-ac-8m0">
-                                <rect key="frame" x="163" y="498" width="240" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdq-AR-Fop" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="525" width="600" height="75"/>
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="KNd-6N-C9G"/>
+                                    <constraint firstAttribute="height" constant="100" id="KNd-6N-C9G"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -265,13 +415,16 @@
                             <constraint firstItem="eaw-BE-E8v" firstAttribute="centerX" secondItem="3lE-rK-0cg" secondAttribute="centerX" id="4ry-G5-HH4"/>
                             <constraint firstItem="sNA-NF-KdD" firstAttribute="centerX" secondItem="3lE-rK-0cg" secondAttribute="centerX" id="80C-w4-Jdg"/>
                             <constraint firstItem="6lI-Db-588" firstAttribute="width" secondItem="3lE-rK-0cg" secondAttribute="height" multiplier="2:5" id="BDC-Dz-gdH"/>
+                            <constraint firstItem="bQG-wy-rQF" firstAttribute="leading" secondItem="3lE-rK-0cg" secondAttribute="leadingMargin" constant="75" id="DF4-jc-OJ9"/>
                             <constraint firstAttribute="bottom" secondItem="Gdq-AR-Fop" secondAttribute="bottom" id="EOP-9b-EvG"/>
                             <constraint firstItem="Gdq-AR-Fop" firstAttribute="leading" secondItem="3lE-rK-0cg" secondAttribute="leading" id="HoB-t4-lA4"/>
                             <constraint firstAttribute="trailing" secondItem="Gdq-AR-Fop" secondAttribute="trailing" id="JPz-m1-yya"/>
                             <constraint firstItem="6lI-Db-588" firstAttribute="top" secondItem="eaw-BE-E8v" secondAttribute="bottom" constant="25" id="KTA-cY-Eh9"/>
+                            <constraint firstItem="Gdq-AR-Fop" firstAttribute="top" secondItem="bQG-wy-rQF" secondAttribute="bottom" constant="40" id="P5W-f4-07H"/>
                             <constraint firstItem="Q5w-X1-96G" firstAttribute="centerX" secondItem="3lE-rK-0cg" secondAttribute="centerX" id="Uck-ey-qxg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6lI-Db-588" secondAttribute="trailing" constant="75" id="ZUq-h5-Kza"/>
                             <constraint firstItem="6lI-Db-588" firstAttribute="centerX" secondItem="3lE-rK-0cg" secondAttribute="centerX" id="cKd-63-rTH"/>
+                            <constraint firstItem="bQG-wy-rQF" firstAttribute="top" secondItem="Q5w-X1-96G" secondAttribute="bottom" constant="40" id="eJN-O1-LLx"/>
                             <constraint firstItem="6lI-Db-588" firstAttribute="leading" secondItem="3lE-rK-0cg" secondAttribute="leadingMargin" constant="75" id="gUF-ze-AT6"/>
                             <constraint firstItem="sNA-NF-KdD" firstAttribute="centerX" secondItem="3lE-rK-0cg" secondAttribute="centerX" id="izp-iw-lj9"/>
                             <constraint firstItem="Q5w-X1-96G" firstAttribute="top" secondItem="6lI-Db-588" secondAttribute="bottom" constant="25" id="jeJ-sY-an8"/>
@@ -283,12 +436,13 @@
                                 <exclude reference="BDC-Dz-gdH"/>
                                 <exclude reference="cKd-63-rTH"/>
                                 <exclude reference="izp-iw-lj9"/>
+                                <exclude reference="P5W-f4-07H"/>
                             </mask>
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="#SaveTheWorld" id="DlE-BC-ghW"/>
                     <connections>
-                        <outlet property="resultLabel" destination="led-ac-8m0" id="hof-AN-zbN"/>
+                        <outlet property="result" destination="bQG-wy-rQF" id="MR0-cw-us5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oMy-Dr-F1m" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -336,6 +490,63 @@
             </objects>
             <point key="canvasLocation" x="1111" y="2039"/>
         </scene>
+        <!--LGBTQIA+-->
+        <scene sceneID="Ebz-rt-BB9">
+            <objects>
+                <viewController title="LGBTQIA+" id="U1I-WP-wvL" customClass="ClosetViewController" customModule="_SaveTheWorld" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4FU-4C-jId"/>
+                        <viewControllerLayoutGuide type="bottom" id="ofV-dF-FMz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V57-2F-Wg9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="closetImage" image="closet_door" translatesAutoresizingMaskIntoConstraints="NO" id="i42-g9-xDV">
+                                <rect key="frame" x="160" y="184" width="280" height="364"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bO-9a-ES9" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="JSw-98-Wgs"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to enter the Closet!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6A-nZ-jt4">
+                                <rect key="frame" x="171" y="114" width="259" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="i42-g9-xDV" firstAttribute="top" secondItem="e6A-nZ-jt4" secondAttribute="bottom" constant="40" id="0mZ-fL-A8o"/>
+                            <constraint firstAttribute="trailing" secondItem="1bO-9a-ES9" secondAttribute="trailing" id="2w5-Ye-Rpo"/>
+                            <constraint firstAttribute="bottom" secondItem="1bO-9a-ES9" secondAttribute="bottom" id="3XW-yu-pRx"/>
+                            <constraint firstItem="i42-g9-xDV" firstAttribute="centerX" secondItem="V57-2F-Wg9" secondAttribute="centerX" id="7ZF-Eh-2v7"/>
+                            <constraint firstItem="e6A-nZ-jt4" firstAttribute="top" secondItem="4FU-4C-jId" secondAttribute="bottom" constant="50" id="FVp-vC-4Gs"/>
+                            <constraint firstItem="1bO-9a-ES9" firstAttribute="leading" secondItem="V57-2F-Wg9" secondAttribute="leading" id="PZY-PH-NsV"/>
+                            <constraint firstItem="e6A-nZ-jt4" firstAttribute="centerX" secondItem="V57-2F-Wg9" secondAttribute="centerX" id="fLV-Lj-bvo"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="NGF-YG-WU7" appends="YES" id="cM1-ZJ-5Xk"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="#SaveTheWorld" id="bBH-hb-2YG"/>
+                    <connections>
+                        <outlet property="closeImage" destination="i42-g9-xDV" id="7sX-OZ-qXd"/>
+                        <outlet property="closetImage" destination="i42-g9-xDV" id="PSz-qP-cqT"/>
+                        <outlet property="tapView" destination="V57-2F-Wg9" id="bh0-dz-FvF"/>
+                        <outlet property="titleLabel" destination="e6A-nZ-jt4" id="lZ8-TM-J0u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="voC-Ho-QWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="NGF-YG-WU7"/>
+            </objects>
+            <point key="canvasLocation" x="1123" y="2740"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="bYu-Tj-ehP">
             <objects>
@@ -355,4 +566,7 @@
             <point key="canvasLocation" x="209" y="319"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="closet_door" width="280" height="364"/>
+    </resources>
 </document>

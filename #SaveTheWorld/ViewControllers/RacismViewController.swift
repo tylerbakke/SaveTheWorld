@@ -9,11 +9,11 @@
 import UIKit
 
 class RacismViewController: UIViewController {
-
-    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBOutlet weak var result: UILabel!
     
     @IBAction func checkOnPress(sender: AnyObject) {
-        resultLabel.text = "That is probably racist..."
+        result.text = "Result: That is probably racist..."
     }
     
     
@@ -32,4 +32,18 @@ class RacismViewController: UIViewController {
 }
 
 extension RacismViewController: UITextViewDelegate{
+    // Clears the text view and result
+    func textViewDidBeginEditing(textView: UITextView) {
+        result.text = "Result: "
+        textView.text = ""
+    }
+    
+    // Check if last typed character is the done key
+    func textViewDidChange(textView: UITextView){
+        if(textView.text.characters.last == Character("\n")){
+            textView.resignFirstResponder()
+        }
+        
+    }
+    
 }
