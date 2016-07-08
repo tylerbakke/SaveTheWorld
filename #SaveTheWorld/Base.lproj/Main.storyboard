@@ -182,12 +182,12 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0k6-91-xdN">
                                 <rect key="frame" x="125" y="170" width="350" height="150"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="rM9-pn-m4e"/>
                                     <constraint firstAttribute="width" constant="350" id="xa3-IT-Xmd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -196,10 +196,10 @@
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1VW-ld-ao1" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="525" width="600" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Uti-GQ-uYu"/>
+                                    <constraint firstAttribute="height" constant="75" id="Uti-GQ-uYu"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pc1-Ze-hYV">
@@ -296,12 +296,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3WT-js-6Jn" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="525" width="600" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="XiP-0E-Fhf"/>
+                                    <constraint firstAttribute="height" constant="75" id="XiP-0E-Fhf"/>
                                 </constraints>
                             </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Joc-kI-s4y">
+                                <rect key="frame" x="207" y="358" width="0.0" height="0.0"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -329,10 +332,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dhK-YF-yBi" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="525" width="600" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="Ld0-S8-Ju6"/>
+                                    <constraint firstAttribute="height" constant="75" id="Ld0-S8-Ju6"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -385,27 +388,20 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQG-wy-rQF">
-                                <rect key="frame" x="95" y="491" width="57" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bQG-wy-rQF">
+                                <rect key="frame" x="95" y="492" width="0.0" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="uUx-cf-TCa"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5w-X1-96G">
-                                <rect key="frame" x="276" y="421" width="49" height="30"/>
-                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
-                                <state key="normal" title="Check!">
-                                    <color key="titleColor" red="0.092485024649999997" green="0.090775852530000006" blue="0.099721858689999998" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="checkOnPress:" destination="Q9i-2I-N8T" eventType="touchUpInside" id="xvW-St-vGa"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdq-AR-Fop" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
+                                <rect key="frame" x="0.0" y="525" width="600" height="75"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="KNd-6N-C9G"/>
+                                    <constraint firstAttribute="height" constant="75" id="KNd-6N-C9G"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -420,15 +416,14 @@
                             <constraint firstItem="Gdq-AR-Fop" firstAttribute="leading" secondItem="3lE-rK-0cg" secondAttribute="leading" id="HoB-t4-lA4"/>
                             <constraint firstAttribute="trailing" secondItem="Gdq-AR-Fop" secondAttribute="trailing" id="JPz-m1-yya"/>
                             <constraint firstItem="6lI-Db-588" firstAttribute="top" secondItem="eaw-BE-E8v" secondAttribute="bottom" constant="25" id="KTA-cY-Eh9"/>
+                            <constraint firstItem="Gdq-AR-Fop" firstAttribute="top" secondItem="bQG-wy-rQF" secondAttribute="bottom" constant="13" id="N9q-TH-UFv"/>
                             <constraint firstItem="Gdq-AR-Fop" firstAttribute="top" secondItem="bQG-wy-rQF" secondAttribute="bottom" constant="40" id="P5W-f4-07H"/>
-                            <constraint firstItem="Q5w-X1-96G" firstAttribute="centerX" secondItem="3lE-rK-0cg" secondAttribute="centerX" id="Uck-ey-qxg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="6lI-Db-588" secondAttribute="trailing" constant="75" id="ZUq-h5-Kza"/>
                             <constraint firstItem="6lI-Db-588" firstAttribute="centerX" secondItem="3lE-rK-0cg" secondAttribute="centerX" id="cKd-63-rTH"/>
-                            <constraint firstItem="bQG-wy-rQF" firstAttribute="top" secondItem="Q5w-X1-96G" secondAttribute="bottom" constant="40" id="eJN-O1-LLx"/>
                             <constraint firstItem="6lI-Db-588" firstAttribute="leading" secondItem="3lE-rK-0cg" secondAttribute="leadingMargin" constant="75" id="gUF-ze-AT6"/>
                             <constraint firstItem="sNA-NF-KdD" firstAttribute="centerX" secondItem="3lE-rK-0cg" secondAttribute="centerX" id="izp-iw-lj9"/>
-                            <constraint firstItem="Q5w-X1-96G" firstAttribute="top" secondItem="6lI-Db-588" secondAttribute="bottom" constant="25" id="jeJ-sY-an8"/>
                             <constraint firstItem="eaw-BE-E8v" firstAttribute="top" secondItem="sNA-NF-KdD" secondAttribute="bottom" constant="25" id="kLu-Qj-ZiU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bQG-wy-rQF" secondAttribute="trailing" constant="428" id="l4R-Tx-cqb"/>
                             <constraint firstItem="6lI-Db-588" firstAttribute="centerX" secondItem="3lE-rK-0cg" secondAttribute="centerX" id="yJz-2g-3mw"/>
                         </constraints>
                         <variation key="default">
@@ -436,6 +431,7 @@
                                 <exclude reference="BDC-Dz-gdH"/>
                                 <exclude reference="cKd-63-rTH"/>
                                 <exclude reference="izp-iw-lj9"/>
+                                <exclude reference="l4R-Tx-cqb"/>
                                 <exclude reference="P5W-f4-07H"/>
                             </mask>
                         </variation>
@@ -502,22 +498,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="closetImage" image="closet_door" translatesAutoresizingMaskIntoConstraints="NO" id="i42-g9-xDV">
-                                <rect key="frame" x="160" y="184" width="280" height="364"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bO-9a-ES9" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="500" width="600" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="JSw-98-Wgs"/>
-                                </constraints>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to enter the Closet!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e6A-nZ-jt4">
                                 <rect key="frame" x="171" y="114" width="259" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="1" green="1" blue="0.44313725490196076" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="closet_door" translatesAutoresizingMaskIntoConstraints="NO" id="i42-g9-xDV" userLabel="Closet Image">
+                                <rect key="frame" x="160" y="184" width="280" height="364"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bO-9a-ES9" customClass="GradientView" customModule="_SaveTheWorld" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="525" width="600" height="75"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="JSw-98-Wgs"/>
+                                </constraints>
+                            </view>
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Words Words Words" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wd2-ar-7ap">
+                                <rect key="frame" x="180" y="160" width="240" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="UZC-Uu-vJQ"/>
+                                    <constraint firstAttribute="height" constant="280" id="dOy-0u-ul6"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fK-MV-nZN">
+                                <rect key="frame" x="278" y="455" width="44" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="gtM-qa-wUD"/>
+                                    <constraint firstAttribute="height" constant="44" id="nAq-lI-hfC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                <state key="normal" title="Home">
+                                    <color key="titleColor" red="0.092485024649999997" green="0.090775852530000006" blue="0.099721858689999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="c48-4z-Y2n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -526,8 +552,12 @@
                             <constraint firstAttribute="trailing" secondItem="1bO-9a-ES9" secondAttribute="trailing" id="2w5-Ye-Rpo"/>
                             <constraint firstAttribute="bottom" secondItem="1bO-9a-ES9" secondAttribute="bottom" id="3XW-yu-pRx"/>
                             <constraint firstItem="i42-g9-xDV" firstAttribute="centerX" secondItem="V57-2F-Wg9" secondAttribute="centerX" id="7ZF-Eh-2v7"/>
+                            <constraint firstItem="Wd2-ar-7ap" firstAttribute="centerY" secondItem="V57-2F-Wg9" secondAttribute="centerY" id="7uM-V8-Q6f"/>
                             <constraint firstItem="e6A-nZ-jt4" firstAttribute="top" secondItem="4FU-4C-jId" secondAttribute="bottom" constant="50" id="FVp-vC-4Gs"/>
                             <constraint firstItem="1bO-9a-ES9" firstAttribute="leading" secondItem="V57-2F-Wg9" secondAttribute="leading" id="PZY-PH-NsV"/>
+                            <constraint firstItem="4fK-MV-nZN" firstAttribute="top" secondItem="Wd2-ar-7ap" secondAttribute="bottom" constant="15" id="SJ0-KT-6Pv"/>
+                            <constraint firstItem="4fK-MV-nZN" firstAttribute="centerX" secondItem="V57-2F-Wg9" secondAttribute="centerX" id="T5d-cg-RMw"/>
+                            <constraint firstItem="Wd2-ar-7ap" firstAttribute="centerX" secondItem="V57-2F-Wg9" secondAttribute="centerX" id="chM-3r-F4S"/>
                             <constraint firstItem="e6A-nZ-jt4" firstAttribute="centerX" secondItem="V57-2F-Wg9" secondAttribute="centerX" id="fLV-Lj-bvo"/>
                         </constraints>
                         <connections>
@@ -536,14 +566,20 @@
                     </view>
                     <navigationItem key="navigationItem" title="#SaveTheWorld" id="bBH-hb-2YG"/>
                     <connections>
-                        <outlet property="closeImage" destination="i42-g9-xDV" id="7sX-OZ-qXd"/>
-                        <outlet property="closetImage" destination="i42-g9-xDV" id="PSz-qP-cqT"/>
+                        <outlet property="closetImage" destination="i42-g9-xDV" id="fKn-ps-OVn"/>
+                        <outlet property="homeButton" destination="4fK-MV-nZN" id="gXh-Px-vdb"/>
+                        <outlet property="messageTextView" destination="Wd2-ar-7ap" id="Crq-TY-5QA"/>
                         <outlet property="tapView" destination="V57-2F-Wg9" id="bh0-dz-FvF"/>
                         <outlet property="titleLabel" destination="e6A-nZ-jt4" id="lZ8-TM-J0u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="voC-Ho-QWD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="NGF-YG-WU7"/>
+                <tapGestureRecognizer id="NGF-YG-WU7">
+                    <connections>
+                        <action selector="tapAction:" destination="U1I-WP-wvL" id="pXJ-cW-XnO"/>
+                        <outlet property="delegate" destination="V57-2F-Wg9" id="MZ5-Df-Xod"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1123" y="2740"/>
         </scene>
@@ -569,4 +605,7 @@
     <resources>
         <image name="closet_door" width="280" height="364"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="o8Q-HU-ZFy"/>
+    </inferredMetricsTieBreakers>
 </document>

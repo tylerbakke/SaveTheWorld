@@ -10,7 +10,6 @@ import UIKit
 
 struct Stage {
     let text: String
-    let begin: Bool
     let end: Bool
     
 }
@@ -20,26 +19,41 @@ struct Stage {
 class ClosetViewController: UIViewController {
 
     @IBOutlet var tapView: UIView!
-    @IBOutlet weak var closeImage: UIImageView!
+    @IBOutlet weak var closetImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var messageTextView: UITextView!
+    @IBOutlet weak var homeButton: UIButton!
     
-    let stages = [Stage(text: "Gay people matter", begin: true, end: false)]
+    let stages = [Stage(text: "Gay people matter", end: false),
+                  Stage(text: "Obviously they are people", end: false),
+                  Stage(text: "What is wrong with you?", end: false),
+                  Stage(text: "Why do you feel the need to negatively affect the lives of others", end: false),
+                  Stage(text: "Sort yourself out", end: true)]
     
     var current = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Add tap gesture recognizer
-        let tap = UIGestureRecognizer(target: self, action: #selector(tappedView))
-        tapView.addGestureRecognizer(tap)
     }
 
-    func tappedView(){
+    @IBAction func tapAction(sender: AnyObject) {
+        // Sets initial state after first tap
         if(current == 0){
+            closetImage.hidden = true
+            titleLabel.hidden = true
+            messageTextView.hidden = false
+        }
+        // If the current stage is the last show the home button
+        if(stages[current].end){
+            messageTextView.text = stages[current].text
+            homeButton.hidden = false
             
         }
-        
-        
+            // Otherwise iterate through stages to show
+        else{
+            messageTextView.text = stages[current].text
+            current += 1
+        }
     }
     
     override func didReceiveMemoryWarning() {

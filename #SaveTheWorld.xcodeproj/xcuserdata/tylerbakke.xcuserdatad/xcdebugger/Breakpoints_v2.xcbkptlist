@@ -135,11 +135,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "#SaveTheWorld/ViewControllers/RacismViewController.swift"
-            timestampString = "489542061.128276"
+            timestampString = "489691730.269366"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "RacismViewController"
             landmarkType = "3">
          </BreakpointContent>
@@ -174,6 +174,116 @@
             endingLineNumber = "23"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "#SaveTheWorld/ViewControllers/ClosetViewController.swift"
+            timestampString = "489689880.188398"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "stages"
+            landmarkType = "19">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "#SaveTheWorld/ViewControllers/ClosetViewController.swift"
+            timestampString = "489689880.188398"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "ClosetViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "#SaveTheWorld/ViewControllers/ClosetViewController.swift"
+            timestampString = "489689482.063832"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "ClosetViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_SaveTheWorld.ClosetViewController.tapView.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "#SaveTheWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerbakke/Desktop/Makeschool/%23SaveTheWorld/%23SaveTheWorld/ViewControllers/ClosetViewController.swift"
+                  timestampString = "489689482.908486"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_SaveTheWorld.ClosetViewController.tapView.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UIView&gt;"
+                  moduleName = "#SaveTheWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerbakke/Desktop/Makeschool/%23SaveTheWorld/%23SaveTheWorld/ViewControllers/ClosetViewController.swift"
+                  timestampString = "489689482.908696"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_SaveTheWorld.ClosetViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.NSBundle&gt;) -&gt; _SaveTheWorld.ClosetViewController"
+                  moduleName = "#SaveTheWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerbakke/Desktop/Makeschool/%23SaveTheWorld/%23SaveTheWorld/ViewControllers/ClosetViewController.swift"
+                  timestampString = "489689482.908813"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "72">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "_SaveTheWorld.ClosetViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;_SaveTheWorld.ClosetViewController&gt;"
+                  moduleName = "#SaveTheWorld"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/tylerbakke/Desktop/Makeschool/%23SaveTheWorld/%23SaveTheWorld/ViewControllers/ClosetViewController.swift"
+                  timestampString = "489689482.908928"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "31">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -12,10 +12,6 @@ class RacismViewController: UIViewController {
     
     @IBOutlet weak var result: UILabel!
     
-    @IBAction func checkOnPress(sender: AnyObject) {
-        result.text = "Result: That is probably racist..."
-    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +30,7 @@ class RacismViewController: UIViewController {
 extension RacismViewController: UITextViewDelegate{
     // Clears the text view and result
     func textViewDidBeginEditing(textView: UITextView) {
-        result.text = "Result: "
+        result.text = ""
         textView.text = ""
     }
     
@@ -42,6 +38,7 @@ extension RacismViewController: UITextViewDelegate{
     func textViewDidChange(textView: UITextView){
         if(textView.text.characters.last == Character("\n")){
             textView.resignFirstResponder()
+            result.text = "That is probably racist..."
         }
         
     }
