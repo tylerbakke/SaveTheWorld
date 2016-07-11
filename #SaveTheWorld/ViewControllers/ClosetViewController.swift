@@ -42,16 +42,21 @@ class ClosetViewController: UIViewController {
             closetImage.hidden = true
             titleLabel.hidden = true
             messageTextView.hidden = false
+            
+            
+//            messageTextView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1.0)
         }
         // If the current stage is the last show the home button
         if(stages[current].end){
             messageTextView.text = stages[current].text
+            messageTextView.textColor = UIColor(red: 255/255, green: 255/255, blue: 113/255, alpha: 1.0)
             homeButton.hidden = false
             
         }
-            // Otherwise iterate through stages to show
+        // Otherwise iterate through stages to show
         else{
             messageTextView.text = stages[current].text
+            messageTextView.textColor = UIColor(red: 255/255, green: 255/255, blue: 113/255, alpha: 1.0)
             current += 1
         }
     }

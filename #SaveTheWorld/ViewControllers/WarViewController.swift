@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WarViewController: UIViewController {
+class JokeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

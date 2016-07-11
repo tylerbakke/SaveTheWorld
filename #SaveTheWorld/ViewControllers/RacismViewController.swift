@@ -38,7 +38,7 @@ extension RacismViewController: UITextViewDelegate{
     func textViewDidChange(textView: UITextView){
         if(textView.text.characters.last == Character("\n")){
             textView.resignFirstResponder()
-            result.text = "That is probably racist..."
+            result.text = "That is pretty racist..."
         }
         
     }
